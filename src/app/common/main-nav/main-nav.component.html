@@ -1,0 +1,34 @@
+<nav class="navbar navbar-expand-lg bg-light">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 cajagrande navcenter">
+          <li class="nav-item navcaja ">
+            <a class="nav-link texnav" href="">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link texnav" [routerLink]="['/about']">ABOUT US</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link texnav" >SERVICES</a>
+          </li>
+          <li class="nav-item">
+            <!-- Se usa routerlink para que la pagina no vuelve a cargar como hacer con href-->
+            <!-- router link tiene su propio procedimiento por eso ['dddd']-->
+            <a class="nav-link texnav" >PROJECTS</a> 
+          </li>
+          <li class="nav-item">
+            <a class="nav-link texnav" href="#news">NEWS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link texnav">CONTACT US</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link texnav" href="#"><i class="bi bi-basket"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>

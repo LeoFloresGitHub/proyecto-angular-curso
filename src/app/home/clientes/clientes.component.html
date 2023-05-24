@@ -1,0 +1,32 @@
+<section>
+    <div class="container">
+        <h2>Clientes </h2>
+        <div class="mb-3">
+            <label class="form-label">Buscar por Empresa</label>
+            <input type="text" class="form-control" [(ngModel)]="clientesFilter.empresa"
+            placeholder="Escriba el nombre de la empresa a buscar">
+        </div>
+        <table class="table"> 
+            <thead>
+            <tr>
+            <th (click)= "setOrder('empresa')">Empresas</th>
+            <th (click)= "setOrder('nombres')">Nombres</th>
+            <th (click)= "setOrder('cargo')">Cargo</th>
+            <th (click)= "setOrder('ciudad')">Ciudad</th>
+            </tr>
+            </thead>
+            <tbody *ngIf="listaClientes">
+                <tr *ngFor="let item of listaClientes | filterBy: clientesFilter |orderBy: order : reversa | paginate:{itemsPerPage: 12, currentPage:p} ">
+                    <td>{{item.empresa}}</td>
+                    <td>{{item.nombres}}</td>
+                    <td>{{item.cargo}}</td>
+                    <td>{{item.ciudad}}</td>
+                </tr>
+            </tbody>
+        </table>
+        <pagination-controls (pageChange)="p = $event"
+            previousLabel="Anterior"
+            nextLabel="Siguiente">
+        </pagination-controls>
+    </div>
+</section>

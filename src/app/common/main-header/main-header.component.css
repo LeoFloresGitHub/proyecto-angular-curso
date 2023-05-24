@@ -1,0 +1,35 @@
+#main-header{
+    padding-right: 30px;
+    padding-left: 30px;
+    height: 100px;
+}
+#espacio{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.tam{
+    margin-right: 10px;
+    margin-left: 10px;
+    
+}
+.cajaconsulta{
+    font-size: 14px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #3c3950;
+    width: 155px;
+    height: 30x;
+    display: flex;
+    justify-content: center;
+}
+.text{
+    padding-top: 15px;
+    color: var(--color3);
+}
+.iconn{
+    padding-right: 15px;
+}
+.cajainfo{
+    width: 200px;
+    font-size: 14px;
+}

@@ -1,0 +1,22 @@
+.texnav{
+    color: var(--color3);
+    font-weight: 700;
+    font-style: normal;
+
+    
+}
+.navcaja{
+    border-width:1px;
+    border-style: solid;
+    border-color:black;
+}
+.navcenter{
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.texnav:hover{
+ color: var(--color1);
+}

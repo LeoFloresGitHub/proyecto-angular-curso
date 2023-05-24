@@ -1,0 +1,10 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root{
+    --color1: #00bcd4;
+    --color2: #99a9b5;
+    --color3: rgb(55, 57, 71);
+    --color5: rgb(0, 188, 212);
+}
